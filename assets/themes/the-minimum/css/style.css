@@ -136,9 +136,7 @@ No styleguide reference.
  * Using for Logo and headers
 */
 @font-face {
-  font-family: 'junctionregularRegular';
-  src: url('/assets/themes/the-minimum/font/Junction-webfont.eot');
-  src: url('/assets/themes/the-minimum/font/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/the-minimum/font/Junction-webfont.woff') format('woff'), url('/assets/themes/the-minimum/font/Junction-webfont.ttf') format('truetype'), url('/assets/themes/the-minimum/font/Junction-webfont.svg#junctionregularRegular') format('svg');
+  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
   font-weight: normal !important;
   font-style: normal;
 }
