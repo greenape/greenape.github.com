@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Disclosure Game 1"
-description: "Simulating the disclosure of drinking behaviour in pregnancy with Bayesian games, and decision theoretic agents."
+summary: "Simulating the disclosure of drinking behaviour in pregnancy with Bayesian games, and decision theoretic agents."
 category: "disclosure game"
 tags: [midwifery, stigma, disclosure, games]
 ---
