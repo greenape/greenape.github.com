@@ -29,7 +29,7 @@ To make this a bit less real, we imagine that you, Bob, Eve, and Alice have a ty
 
 While clearly still a gross simplification, this starts to sound a bit more like reality.
 
-As I mentioned earlier, you can apply game theory to things that are not obviously game like, for example <a url="http://en.wikipedia.org/wiki/Signalling_(economics)#Assumptions_and_groundwork">job interviews</a>. Of which, more in a subsequent post.
+As I mentioned earlier, you can apply game theory to things that are not obviously game like, for example <a href="http://en.wikipedia.org/wiki/Signalling_(economics)#Assumptions_and_groundwork">job interviews</a>. Of which, more in a subsequent post.
 
 
 
