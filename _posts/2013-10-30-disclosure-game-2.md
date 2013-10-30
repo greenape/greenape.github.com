@@ -7,6 +7,7 @@ tags: [games, monopoly, game theory]
 ---
 {% include JB/setup %}
 I mentioned in my previous [post]({% post_url 2013-10-28-disclosure-game-1 %}) that the telling potentially damaging, possible beneficial secrets situation looked like a game. Let's dig into what I meant by that a little before explaining how this particular game works.  Game, in this situation, has a slightly different definition from the usual Monopoly, or Mario Kart scenarios. This is a more abstract notion of game.
+
 Let's think about monopoly. Monopoly is, as anybody who has spent a wet and argumentative weekend will know, a pretty complicated game. But, if you break it up into extremely broad categories of thing, is actually made up of not that many bits. You need some players, and you need some rules. The rules are the most obviously complicated bit, and describe the order of play, the moves you can make, and what happens when you roll a six and your annoying cousin has all the utilities. Making that a little more abstract, you have moves, and you have payoffs for those moves which may depend on moves made by other players.
 Perhaps less immediately obviously, each player has a bunch of information about the state of the game - you can see the board, you know the rules, you know the dice are pretty much fair, and that Aunt [Eve](http://en.wikipedia.org/wiki/Alice_and_Bob) is a goddamn sneak.
 
