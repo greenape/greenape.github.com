@@ -6,7 +6,6 @@ category: "disclosure game"
 tags: [signalling, game theory, disclosure game, alcohol, midwifery]
 ---
 {% include JB/setup %}
-
 You're recruiting for a software developer position. You interview two people, one of whom claims to be super productive. How do you know if that's actually true? Casting that more generally, somebody is sending you a signal about a secret only they know. What can you tell about their secret from that signal?
 
 Problems of this type are generally known as <a href="http://en.wikipedia.org/wiki/Signaling_game">signalling games</a>, and the particular example with the job interview comes from <a href="http://qje.oxfordjournals.org/content/87/3/355.abstract" title="Job Market Signalling*. The Quarterly Journal of Economics (1973) 87 (3): 355-374">Spence (1973)</a>. Who describes a scenario where the job applicants have a publicly known level of education. Education is, in this instance, the signal, and a high level of education is more costly to obtain if you aren't a very productive person. As it turns out, the costly nature of the signalling can lead to enforcing honest signalling behaviour (assuming pathologically self interested and rational players). The pay from the job is only worth it for high productivity applicants because of the cost of a highly educated signal.
