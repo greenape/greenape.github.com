@@ -32,7 +32,7 @@ When it comes to updating these beliefs, the formula can be transformed into the
 
 An example, let the psuedo-counts, \\(\alpha\\) be {10, 1, 1}. That's 10 for non-judgemental, and 1 for each of the other two. The prior belief that next randomly drawn midwife is going to be a harsh one is then \\(P(harsh)=\frac{1}{10 + 1 + 1}=\frac{1}{12}\\).
 
-The next midwife is drawn, and is actually a moderate one. So, \\(n={0, 1, 0}\\). This changed the balance of probability for the harsh midwife, which becomes \\(P(harsh)=\frac{1 + 0}{(10 + 1 + 1) + (0 + 0 + 1)}=\frac{1}{12 + 1}=\frac{1}{13}\\). The likelihood of a non-judgemental midwife is similarly diminished.
+The next midwife is drawn, and is actually a moderate one. So, \\(n={0, 1, 0}\\). This changed the balance of probability for the harsh midwife, which becomes \\(P(harsh)=\frac{1 + 0}{(10 + 0) + (1 + 1) + (1 + 0)}=\frac{1}{10 + 2 + 1}=\frac{1}{13}\\). The likelihood of a non-judgemental midwife is similarly diminished.
 
 The same principle can be applied to reasoning about the implications of signals, by counting the number of times that a response followed a signal, or a signal was sent by a type. (These are the \\(\alpha\\) and \\(n\\).)
 
