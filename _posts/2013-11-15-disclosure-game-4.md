@@ -7,6 +7,7 @@ tags: [agents, bayes]
 ---
 {% include JB/setup %}
 Last time, I finally mentioned the disclosure game and said it looked like this: ![Simplified signalling game]({{ site.url }}/assets/images/simple_game_tree.png)
+
 (I've described it in terms of midwives, and pregnant women who may or may not have a drinking problem. But I think the structure is more general than that, and can be applied in a lot of scenarios where there's some degree of common interest to revealing information.)
 In this post, I'm going to talk about simulating the game.
 
@@ -38,7 +39,3 @@ The same principle can be applied to reasoning about the implications of signals
 This gives us probabilities which can be used for reasoning. Women's beliefs about the distribution of midwife types should, given time, approach the true distribution. Beliefs about referrals, and the meaning of signals may have no static distribution to converge to, and make the overall system unstable. Which is actually what we want!
 
 There's a whole lot of words here, so I will leave what the agents actually do with their beliefs to another post.
-
-<script type="text/javascript"
-  src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
