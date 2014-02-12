@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Leuvin Abstract"
+title: "Leuven Abstract"
 description: ""
 category: "disclosure game"
 tags: [disclosure game, agents, abstract, tex, pandoc]
