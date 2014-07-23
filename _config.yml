@@ -1,21 +1,22 @@
 title:            Simulated Things
-description:      Complexity, social simulation, and so forth.
+description:      Simulation, complexity, social systems, agents and so forth.
 logo:             site-logo.png
-disqus_shortname: simulatedthings
+disqus_shortname:	simulatedthings
 search:           true
-# Your site's domain goes here. When working locally use localhost server leave blank
-# PS. If you set this wrong stylesheets and scripts won't load and most links will break.
-# PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
-url:              http://greenape.github.io
+# Change url to your domain. Leave localhost server or blank when working locally.
+# You don't need to specify the protocol if you want it available on http and https. Example: //localhost:4000
+url:              //greenape.github.io
 
 # Owner/author information
 owner:
   name:           Jono
-  avatar:         your-photo.jpg
+  avatar:         bio-photo.jpg
   email:          j.gray@soton.ac.uk
   # Social networking links used in footer. Update and remove as you like.
-  twitter:			lime_ape
-  github:			greenape
+  twitter:	lime_ape
+  github:	green_ape
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:	https://plus.google.com/u/0/114553278523539436939
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
@@ -27,17 +28,38 @@ bing_verify:
 # For external links add external: true
 links:
   - title: About
-    url: /about
+    url: /about/
   - title: Articles
-    url: /articles
-  - title: Google
-    url: http://google.com
+    url: /articles/
+  - title: Theme Setup
+    url: /theme-setup/
+  - title: Made Mistakes
+    url: http://mademistakes.com
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
+future:      true
 pygments:    true
+#highlighter: pygments
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "README.md", "LICENSE", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
