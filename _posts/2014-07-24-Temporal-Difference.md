@@ -6,7 +6,7 @@ status: draft
 hn-discussion:
 ---
 
-Many moons ago, while I was doing a belated BSc in computer science and AI, I was fortunate enough to fall into the company of [Eduardo Alonso](http://www.soi.city.ac.uk/~eduardo/), and [Esther Mondragón](http://cal-r.org/mondragon/), and had the opportunity to build a simulator for my final year project. The simulator was an extension of an excellent tool for simulating arguably the best known model of classical conditon learning, the [Rescorla & Wagner model](http://www.scholarpedia.org/article/Rescorla-Wagner_model) (you can get it [here](http://cal-r.org/index.php?id=R-Wsim)).
+Many moons ago, while I was doing a belated BSc in computer science and AI, I was fortunate enough to fall into the company of [Eduardo Alonso](http://www.soi.city.ac.uk/~eduardo/), and [Esther Mondragón](http://cal-r.org/mondragon/), and had the opportunity to build a simulator for my final year project. The simulator was an extension of an excellent tool for simulating arguably the best known model of classical conditioning, the [Rescorla & Wagner model](http://www.scholarpedia.org/article/Rescorla-Wagner_model) (you can get it [here](http://cal-r.org/index.php?id=R-Wsim)).
 
 The simulator we built then, was for the [Temporal Difference model](http://www.scholarpedia.org/article/Temporal_Difference_Learning), which is actually very similar to Rescorla-Wagner, but can be applied in real time. You can, incidentally, get ahold of [that](http://cal-r.org/index.php?id=TD-sim), and the [source](https://github.com/cal-r/td) for it as well, if you're interested.  The TD algorithm was developed by [Richard Sutton](http://www.cs.ualberta.ca/~sutton/), and turns up all over the place, notably as an algorithm for training neural nets to play backgammon (almost) as well as humans. Besides that, there's also pretty good evidence that it describes the behaviour of some types of neurones.
 
@@ -22,7 +22,7 @@ Basically, this is because the algorithm doesn't distinguish between the combina
 
 By way of a demonstration, here's two graphs. First, without configural cues:
 
-![Configural cues off][no_configural]
+![Configural cues off](no_configural.png)
 
 And now with a configural cue representing the combination of A & B (that's the c(AB)):
 
