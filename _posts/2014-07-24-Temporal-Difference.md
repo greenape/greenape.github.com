@@ -22,11 +22,11 @@ Basically, this is because the algorithm doesn't distinguish between the combina
 
 By way of a demonstration, here's two graphs. First, without configural cues:
 
-![Configural cues off](no_configural.png)
+![Configural cues off]({{ site.url }}/images/no_configural.png)
 
 And now with a configural cue representing the combination of A & B (that's the c(AB)):
 
-![Configural cues on][configural]
+![Configural cues on]({{ site.url }}/images/configural.png)
 
 Very cool, if you're into that sort of thing.
 
@@ -38,17 +38,17 @@ Let's give it a quick try in the simulator, training with dinner after A followe
 
 Here's what happens with vanilla TD:
 
-![Vanilla][sequence]
+![Vanilla]({{ site.url }}/images/sequence.png)
 
 Sort of a weakish response to both. Not quite right.
 
 How about TD with a basic configural cue representing A & B together?
 
-![Configural][sequence_configural]
+![Configural]({{ site.url }}/images/sequence_configural.png)
 
 We solve this, by imagining a different kind of added cue, one that represents the order of events. So there's a way to distinguish A-then-B from B-then-A. Running this in the simulator gives us this:
 
-![Serial configural][chicken_dinner]
+![Serial configural]({{ site.url }}/images/chicken_dinner.png)
 
 A and B pretty much cancel each other out, which leaves us with A-then-B, which as you'd hope gives you a dog expecting his dinner, and B-then-A, which leads to this:
 
