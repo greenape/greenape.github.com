@@ -113,9 +113,7 @@ def main():
             f.write('---\n')
             f.write('layout: post\n')
             f.write('title: ' + title + '\n')
-            f.write('summary:\n')
-            f.write('status: draft\n')
-            f.write('hn-discussion:\n')
+            f.write('description:\n')
             f.write('comments: %s\n' % args.comments)
             f.write('share: true\n')
             if tags:

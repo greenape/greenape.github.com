@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Temporal Difference
-summary: A simulator for a model of associative learning I wrote a few years back, and the paper on it we just published.
-status: draft
+description: A simulator for a model of associative learning I wrote a few years back, and the paper on it we just published.
 hn-discussion:
 comments: true
 share: true
