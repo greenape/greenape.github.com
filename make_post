@@ -50,6 +50,7 @@ def main():
     parser.add_argument('-t', '--tags', help='specify a set of tags for the post separated by spaces with the entire set wrapped in quotes (e.g. "tag1 tag2 tag3").')
     parser.add_argument('-w', '--write', action="store_true",
         help='signals if this file should be opened for writing after creation')
+    parser.add_argument('-c', '--comments', action="store_false", default=True)
     args = parser.parse_args()
 
     title = args.title
@@ -115,6 +116,7 @@ def main():
             f.write('summary:\n')
             f.write('status: draft\n')
             f.write('hn-discussion:\n')
+            f.write('comments: %s\n' % args.comments)
             if tags:
                 f.write('tags:\n')
                 for tag in tags:
