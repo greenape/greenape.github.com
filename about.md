@@ -1,33 +1,16 @@
 ---
 layout: page
 permalink: /about/
-title: About the Jekyll Theme
-tags: [Jekyll, theme, simple, minimal, minimalism, responsive]
-modified: 2013-09-13
-image:
-  feature: so-simple-sample-image-4.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
+title: Hi, I'm Jono
+tags: [me, me, me, me]
+modified: 2014-07-25
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes).
+And I'm a PhD student, at the [University of Southampton](http://www.soton.ac.uk/). That doesn't tell you much, so I'll also say that I live in Social Statistics & Demography, and belong to the [Institute of Complex Systems Simulation](http://www.icss.soton.ac.uk/). I always feel like I should instantly confess to not actually being a statistician, or a demographer, because if I'm anything I'm really a computer scientist. My special interest is in agent based models of social systems, and more specifically applying decision theory to those agents. To be even more precise, those social systems are in the nebulous world of social care, as part of the (Care Lifecycle project)[http://www.southampton.ac.uk/clc]. Thus far, if we want to do this with laser-like precision, midwifery. And drunk people.
 
-## So Simple Theme is all about:
+I spend a lot of time fiddling around in python, and slightly less crunching data in R. I like to cook, I ride a bike (not at the same time).
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations. 
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Disqus comments if you choose to enable.
-* Simple and clear permalink structure[^1].
-* Tags for [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) for a better social sharing experience.
-* Vanilla [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/articles/so-simple-theme/code-highlighting-post/) to make your code examples look snazzy.
-* Simple search that overlays results based on post title.
-* [Grunt build script]({{ site.url }}/theme-setup/index.html#theme-development) for easier theme development.
-* [Sitemap](https://github.com/mmistakes/so-simple-theme/blob/master/sitemap.xml) for search engines
+All good? Excellent.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+You can look me up in places like [Google scholar](http://scholar.google.co.uk/citations?user=IXr_IoUAAAAJ), [GitHub](https://github.com/greenape), [ImpactStory](https://impactstory.org/JonathanGray), Southampton's [Computational Modelling Group](http://cmg.soton.ac.uk/people/jg1g12/), and probably a few others.
 
-[^1]: Example: *domain.com/category-name/post-title*
