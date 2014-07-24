@@ -4,6 +4,7 @@ title: Temporal Difference
 summary: A simulator for a model of associative learning I wrote a few years back, and the paper on it we just published.
 status: draft
 hn-discussion:
+comments: true
 ---
 
 Many moons ago, while I was doing a belated BSc in computer science and AI, I was fortunate enough to fall into the company of [Eduardo Alonso](http://www.soi.city.ac.uk/~eduardo/), and [Esther Mondragón](http://cal-r.org/mondragon/), and had the opportunity to build a simulator for my final year project. The simulator was an extension of an excellent tool for simulating arguably the best known model of classical conditioning, the [Rescorla & Wagner model](http://www.scholarpedia.org/article/Rescorla-Wagner_model) (you can get it [here](http://cal-r.org/index.php?id=R-Wsim)).
