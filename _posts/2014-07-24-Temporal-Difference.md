@@ -46,6 +46,8 @@ How about TD with a basic configural cue representing A & B together?
 
 ![Configural]({{ site.url }}/images/sequence_configural.png)
 
+Still not quite right. The combination will cancel out any salivation with both together, but you still get a weakish response to either A or B no matter what order they come in.
+
 We solve this, by imagining a different kind of added cue, one that represents the order of events. So there's a way to distinguish A-then-B from B-then-A. Running this in the simulator gives us this:
 
 ![Serial configural]({{ site.url }}/images/chicken_dinner.png)
