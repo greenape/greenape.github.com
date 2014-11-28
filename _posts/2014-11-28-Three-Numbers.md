@@ -28,7 +28,7 @@ Which turned out to be harder than it sounds.
 My first gasp measure, when looking at how different things are, would always be
 standard deviation. This looks promising -
 
-```python
+```
 import numpy as np
 np.std([0, 0, 0])
 0.0
@@ -43,18 +43,17 @@ Brilliant - the our most different possible set, is pretty high, and the most
 similar is zero. This is also true whenever all three are the same number
 (obviously).  What isn't ideal, is this:
 
-```python
+```
 np.std([0, 2, 2])
 0.94280904158206336
 ```
-
 
 
 Two of those numbers look suspiciously similar to me. But the set has a higher
 standard deviation. Not ideal. How about an alternative measure of spread - the
 IQR?
 
-```python
+```
 np.subtract(*np.percentile([0, 2, 2], [75, 25]))
 1.0
 
@@ -72,7 +71,7 @@ A little better, in that the two-numbers-the-same scenario isn't actually
 about a more geometric interpretation of the problem, like, average absolute
 difference?
 
-```python
+```
     from itertools import permutations
     
     def abs_distance(numbers):
@@ -86,7 +85,7 @@ difference?
 
 Naturally, this also doesn't work:
 
-```python
+```
     avg_abs_distance([0, 0, 0]), avg_abs_distance([0, 1, 2]), avg_abs_distance([0, 2, 2])
 
     (0.0, 1.3333333333333333, 1.3333333333333333)
@@ -95,7 +94,7 @@ Naturally, this also doesn't work:
 
 And the same, but moreso for mean squared difference:
 
-```python
+```
     def sq_distance(numbers):
         pairs = permutations(numbers, 2)
         return map(lambda (x, y): pow(x - y, 2), pairs)
@@ -121,7 +120,7 @@ This makes zero the most different your numbers can be (there are no residuals).
 Here's the right line (y=x):
 
 
-```python
+```
 	from pylab import *
     
     right_line = [0, 1, 2]
@@ -134,7 +133,7 @@ Here's the right line (y=x):
 
 And here's a wrong line:
 
-```python
+```
     right_line = [0, 1, 2]
     plot(right_line, right_line, 'b*-')
     rubbish_line = [1, 1, 1]
@@ -147,7 +146,7 @@ And here's a wrong line:
 
 Working out the residual sum of squares is pretty easy -
 
-```python
+```
     def rss(points):
         residuals = np.array(points) - np.array([0, 1, 2])
         return np.sum(np.power(residuals, 2))
@@ -160,7 +159,7 @@ Working out the residual sum of squares is pretty easy -
 
 Nice. But we should amend our method, because right now...
 
-```python
+```
     rss([2, 1, 0]), rss([1, 2, 0]), rss([0, 2, 1])
 
     (8, 6, 2)
@@ -170,7 +169,7 @@ Nice. But we should amend our method, because right now...
 Which isn't quite right. This is easily resolved, by sorting the points before
 calculating residuals.
 
-```python
+```
     def rss(points):
         points = np.array(points)
         points.sort()
@@ -185,7 +184,7 @@ calculating residuals.
 
 Much better. Unfortunately -
 
-```python
+```
     rss([0, 0, 2]), rss([0, 0, 0]), rss([0, 0, 1])
 
     (1, 5, 2)
@@ -195,7 +194,7 @@ Much better. Unfortunately -
 The result is a horrible metric, for these purposes. And the same applies to
 related measures like mean squared error -
 
-```python
+```
     def mse(points):
         points = np.array(points)
         points.sort()
