@@ -155,9 +155,9 @@ Working out the residual sum of squares is pretty easy -
         residuals = np.array(points) - np.array([0, 1, 2])
         return np.sum(np.power(residuals, 2))
     
-    rss([1, 1, 1]), rss([0, 1, 2])
+rss([1, 1, 1]), rss([0, 1, 2])
 
-    (2, 0)
+(2, 0)
 {% endhighlight %}
 
 
@@ -166,7 +166,7 @@ Nice. But we should amend our method, because right now...
 {% highlight python %}
     rss([2, 1, 0]), rss([1, 2, 0]), rss([0, 2, 1])
 
-    (8, 6, 2)
+(8, 6, 2)
 {% endhighlight %}
 
 
@@ -180,9 +180,9 @@ calculating residuals.
         residuals = points - np.array([0, 1, 2])
         return np.sum(np.power(residuals, 2))
     
-    rss([2, 1, 0]), rss([1, 2, 0]), rss([0, 2, 1])
+rss([2, 1, 0]), rss([1, 2, 0]), rss([0, 2, 1])
 
-    (0, 0, 0)
+(0, 0, 0)
 {% endhighlight %}
 
 
@@ -191,7 +191,7 @@ Much better. Unfortunately -
 {% highlight python %}
     rss([0, 0, 2]), rss([0, 0, 0]), rss([0, 0, 1])
 
-    (1, 5, 2)
+(1, 5, 2)
 {% endhighlight %}
 
 
@@ -205,9 +205,9 @@ related measures like mean squared error -
         residuals = points - np.array([0, 1, 2])
         return np.mean(np.power(residuals, 2))
              
-    mse([0, 0, 2]), mse([0, 0, 0]), mse([0, 0, 1])
+mse([0, 0, 2]), mse([0, 0, 0]), mse([0, 0, 1])
 
-    (0.33333333333333331, 1.6666666666666667, 0.66666666666666663)
+(0.33333333333333331, 1.6666666666666667, 0.66666666666666663)
 {% endhighlight %}
 
 
