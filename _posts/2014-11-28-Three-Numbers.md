@@ -28,7 +28,7 @@ Which turned out to be harder than it sounds.
 My first gasp measure, when looking at how different things are, would always be
 standard deviation. This looks promising -
 
-
+{% highlight python %}
     import numpy as np
     np.std([0, 0, 0])
 
@@ -46,6 +46,7 @@ standard deviation. This looks promising -
 
 
     0.81649658092772603
+{% endhighlight %}
 
 
 
