@@ -219,5 +219,5 @@ they are? This is important, because a better solution to my *actual problem*
 arose from the context - measuring how different three numbers are, leads to an
 overcomplicated solution, to an oversimplified problem.
 
-[^1] He actually suggested a more sophisticated method than this, but the end
+[^1]: He actually suggested a more sophisticated method than this, but the end
 result is similar.
