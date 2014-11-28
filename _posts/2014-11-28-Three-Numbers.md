@@ -29,23 +29,12 @@ My first gasp measure, when looking at how different things are, would always be
 standard deviation. This looks promising -
 
 {% highlight python %}
-    import numpy as np
-    np.std([0, 0, 0])
+import numpy as np
+np.std([0, 0, 0])
+0.0
 
-
-
-
-    0.0
-
-
-
-
-    np.std([0, 1, 2])
-
-
-
-
-    0.81649658092772603
+np.std([0, 1, 2])
+0.81649658092772603
 {% endhighlight %}
 
 
@@ -55,12 +44,10 @@ similar is zero. This is also true whenever all three are the same number
 (obviously).  What isn't ideal, is this:
 
 
-    np.std([0, 2, 2])
-
-
-
-
-    0.94280904158206336
+{% highlight python %}
+np.std([0, 2, 2])
+0.94280904158206336
+{% endhighlight %}
 
 
 
@@ -68,33 +55,16 @@ Two of those numbers look suspiciously similar to me. But the set has a higher
 standard deviation. Not ideal. How about an alternative measure of spread - the
 IQR?
 
+{% highlight python %}
+np.subtract(*np.percentile([0, 2, 2], [75, 25]))
+1.0
 
-    np.subtract(*np.percentile([0, 2, 2], [75, 25]))
+np.subtract(*np.percentile([0, 1, 2], [75, 25]))
+1.0
 
-
-
-
-    1.0
-
-
-
-
-    np.subtract(*np.percentile([0, 1, 2], [75, 25]))
-
-
-
-
-    1.0
-
-
-
-
-    np.subtract(*np.percentile([1, 1, 1], [75, 25]))
-
-
-
-
-    0.0
+np.subtract(*np.percentile([1, 1, 1], [75, 25]))
+0.0
+{% endhighlight %}
 
 
 
@@ -103,46 +73,43 @@ A little better, in that the two-numbers-the-same scenario isn't actually
 about a more geometric interpretation of the problem, like, average absolute
 difference?
 
-
-    from itertools import permutations
+{% highlight python %}
+from itertools import permutations
     
-    def abs_distance(numbers):
-        pairs = permutations(numbers, 2)
-        return map(lambda (x, y): abs(x - y), pairs)
+def abs_distance(numbers):
+    pairs = permutations(numbers, 2)
+    return map(lambda (x, y): abs(x - y), pairs)
     
-    def avg_abs_distance(numbers):
-        dists = abs_distance(numbers)
-        return np.mean(dists)
+def avg_abs_distance(numbers):
+    dists = abs_distance(numbers)
+    return np.mean(dists)
+{% endhighlight %}
 
 Naturally, this also doesn't work:
 
+{% highlight python %}
+avg_abs_distance([0, 0, 0]), avg_abs_distance([0, 1, 2]), avg_abs_distance([0, 2, 2])
 
-    avg_abs_distance([0, 0, 0]), avg_abs_distance([0, 1, 2]), avg_abs_distance([0, 2, 2])
-
-
-
-
-    (0.0, 1.3333333333333333, 1.3333333333333333)
+(0.0, 1.3333333333333333, 1.3333333333333333)
+{% endhighlight %}
 
 
 
 And the same, but moreso for mean squared difference:
 
-
-    def sq_distance(numbers):
-        pairs = permutations(numbers, 2)
-        return map(lambda (x, y): pow(x - y, 2), pairs)
+{% highlight python %}
+def sq_distance(numbers):
+    pairs = permutations(numbers, 2)
+    return map(lambda (x, y): pow(x - y, 2), pairs)
     
-    def avg_sq_distance(numbers):
-        dists = sq_distance(numbers)
-        return np.mean(dists)
+def avg_sq_distance(numbers):
+    dists = sq_distance(numbers)
+    return np.mean(dists)
     
-    avg_sq_distance([0, 0, 0]), avg_sq_distance([0, 1, 2]), avg_sq_distance([0, 2, 2])
+avg_sq_distance([0, 0, 0]), avg_sq_distance([0, 1, 2]), avg_sq_distance([0, 2, 2])
 
-
-
-
-    (0.0, 2.0, 2.6666666666666665)
+(0.0, 2.0, 2.6666666666666665)
+{% endhighlight %}
 
 
 
@@ -156,15 +123,13 @@ This makes zero the most different your numbers can be (there are no residuals).
 
 Here's the right line (y=x):
 
-
-    %matplotlib inline
-
-
-    from pylab import *
+{% highlight python %}
+from pylab import *
     
-    right_line = [0, 1, 2]
-    plot(right_line, right_line, 'b*-')
-    show()
+right_line = [0, 1, 2]
+plot(right_line, right_line, 'b*-')
+show()
+{% endhighlight %}
 
 
 ![png]({{ site.url }}/images/three%20numbers_17_0.png)
@@ -172,49 +137,43 @@ Here's the right line (y=x):
 
 And here's a wrong line:
 
-
-    right_line = [0, 1, 2]
-    plot(right_line, right_line, 'b*-')
-    rubbish_line = [1, 1, 1]
-    plot(right_line, rubbish_line, 'r*-')
-    show()
-
+{% highlight python %}
+right_line = [0, 1, 2]
+plot(right_line, right_line, 'b*-')
+rubbish_line = [1, 1, 1]
+plot(right_line, rubbish_line, 'r*-')
+show()
+{% endhighlight %}
 
 ![png]({{ site.url }}/images/three%20numbers_19_0.png)
 
 
 Working out the residual sum of squares is pretty easy -
 
-
+{% highlight python %}
     def rss(points):
         residuals = np.array(points) - np.array([0, 1, 2])
         return np.sum(np.power(residuals, 2))
     
     rss([1, 1, 1]), rss([0, 1, 2])
 
-
-
-
     (2, 0)
-
+{% endhighlight %}
 
 
 Nice. But we should amend our method, because right now...
 
-
+{% highlight python %}
     rss([2, 1, 0]), rss([1, 2, 0]), rss([0, 2, 1])
 
-
-
-
     (8, 6, 2)
-
+{% endhighlight %}
 
 
 Which isn't quite right. This is easily resolved, by sorting the points before
 calculating residuals.
 
-
+{% highlight python %}
     def rss(points):
         points = np.array(points)
         points.sort()
@@ -223,29 +182,23 @@ calculating residuals.
     
     rss([2, 1, 0]), rss([1, 2, 0]), rss([0, 2, 1])
 
-
-
-
     (0, 0, 0)
-
+{% endhighlight %}
 
 
 Much better. Unfortunately -
 
-
+{% highlight python %}
     rss([0, 0, 2]), rss([0, 0, 0]), rss([0, 0, 1])
 
-
-
-
     (1, 5, 2)
-
+{% endhighlight %}
 
 
 The result is a horrible metric, for these purposes. And the same applies to
 related measures like mean squared error -
 
-
+{% highlight python %}
     def mse(points):
         points = np.array(points)
         points.sort()
@@ -254,11 +207,8 @@ related measures like mean squared error -
              
     mse([0, 0, 2]), mse([0, 0, 0]), mse([0, 0, 1])
 
-
-
-
     (0.33333333333333331, 1.6666666666666667, 0.66666666666666663)
-
+{% endhighlight %}
 
 
 At which point, I gave up and used the interquartile range.
