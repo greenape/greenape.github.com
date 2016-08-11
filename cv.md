@@ -7,7 +7,6 @@ modified: 2016-08-11
 ---
 
 # Jonathan Gray
-### PhD Researcher
 
 > [Download PDF](j_gray_cv.pdf)  
 > [j.gray@soton.ac.uk](j.gray@soton.ac.uk)  
