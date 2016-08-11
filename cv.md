@@ -1,3 +1,11 @@
+---
+layout: page
+permalink: /cv/
+title: CV
+modified: 2016-08-11
+---
+
+
 # Jonathan Gray
 ## PhD Researcher
 
