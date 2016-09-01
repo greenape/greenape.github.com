@@ -15,21 +15,7 @@ modified: 2016-08-11
 -------
 
 ### Skills {#skills}
-
-1. Python
-1. HPC
-1. R
-1. Java
-1. SQL
-1. LaTeX
-1. Statistics
-1. Agent-based modelling
-1. Simulation
-1. Decision theory
-1. Associative learning
-1. Survey data
-1. Version control
-1. Javascript
+ Python | HPC | R | Java | SQL | LaTeX | Statistics | Agent-based modelling | Simulation | Decision theory | Associative learning | Survey data | Version control | Javascript
 
 ------
 
@@ -48,7 +34,7 @@ City University, London
 ------
 
 ### Publications {#publications}
-&nbsp;
+
 :	J Gray, J Bijak, S Bullock. Deciding to Disclose: A Decision Theoretic Agent Model of Pregnancy and Alcohol Misuse. In J. Van Bavel & A. Grow (Eds.), Agent-based modeling in population studies: Concepts,
 methods, and applications. Dordrecht: Springer. (Forthcoming)
 
@@ -96,18 +82,21 @@ Temporal Difference Simulator
 
 	[https://github.com/cal-r/td](https://github.com/cal-r/td)
 
+flow-do
+: An experimental, Sankey diagram inspired todo list in Javascript/firebase.
+
+	[https://github.com/greenape/flow-do](https://github.com/greenape/flow-do)
+
 ------
 
 ### Experience {#experience}
 
 Communications International Group
 : *Technical Support*
+
   __2010-2012__
-  Responsibilities: Troubleshooting PC & mac issues, liaising with third party contractors, server management, user training.
 
-	Skills Needed: OSX, Server 2003/AD, teamwork, expectation management, time management, personal interaction/training & support, Exchange 2003, iPhone.
-
-	Achievements/Improvements made: Part of team delivering integrated OSX/Windows system, deployment of WiFi coverage for offices, introduction of automated maintenance systems, training of users in best practices and use of the Outlook calendaring system, setup of push mail to iPhones using Exchange ActiveSync.
+Supported day-to-day operations at a busy publisher by troubleshooting PC/OSX and hardware issues; managing Server 2003/Exchange system, and liaising with third-party contractors/suppliers. Delivered integrated OSX/Windows login system, WiFi installation, deskside user training, onsite backup solution, and developed an in house expenses reporting tool using Python/Django.
 
 
 ------
