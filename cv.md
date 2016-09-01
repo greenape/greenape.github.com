@@ -34,7 +34,7 @@ City University, London
 ------
 
 ### Publications {#publications}
-
+&nbsp;
 :	J Gray, J Bijak, S Bullock. Deciding to Disclose: A Decision Theoretic Agent Model of Pregnancy and Alcohol Misuse. In J. Van Bavel & A. Grow (Eds.), Agent-based modeling in population studies: Concepts,
 methods, and applications. Dordrecht: Springer. (Forthcoming)
 
